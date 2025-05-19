@@ -1,0 +1,35 @@
+Preparcial abstract
+
+1.¿Qué se solicita finalmente? (Problema)
+=> programa que modele un sistema de peaje
+
+2. Información relevante
+=> 
+Peaje: (String nombre, String departamento, double valorTotalPeajes)
+Vehiculo: (String placa, int cantidadPeajesPagados) 
+Vehiculo >> Carro(valor base 10k): (TipoCarro: Eléctrico - Combustión (si es eléctrico aplica 20% descuento), boolean servicioPublico(True : aumenta un 15%).
+	>> Moto(valor base 5k): (int cilindrada(cc > 200 = +2k));
+	>> Camion(valor base de 7k por eje): (int cantEjes, si supera 10T + 10% sobre total calculado por eje)
+Persona: String nombre, String apellido
+	Conductor: String id, LocalDate fechaNacimiento, listVehiculos
+	Recaudador: double DineroRecaudado	
+
+3. ¿Cómo se agrupa la información+ relevante?
+=> Peaje: String nombre, String departamento, double valorTotalPeajes
+=> Vehiculo: String placa, int cantidadPeajesPagados, int capacidadCargaTon
+	=>Carro: TipoCarro tipoCarro, boolean servicioPublico
+	=>Moto: int cilindraje
+	=>Camion: int cantEjes
+=> Persona: String nombre, String apellido
+	=> Conductor: String id, LocalDate fechaNacimiento, listVehiculos
+	=> Recaudador: double DineroRecaudado
+
+4. ¿Qué funcionalidades se solicitan?
+=> AsignarVehiculoPersona
+=> MostrarInformacionVehiculosPeaje
+=> (Método Abstracto)InformacionDescriptiva
+=> ConsultarDineroVehiculosDePersona
+=> MostrarVehiculosDeConductorPorTipo
+=> CalcularYActualizarDineroTotalPeaje
+=> BuscarRecaudadorPorNombreYApellido
+=> ConsultarConductoresConCamionesXToneladas
