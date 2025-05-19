@@ -32,7 +32,7 @@ public class Carro extends Vehiculo {
     @Override
     public String getDescripcion() {
         return "DATOS DEL VEHICULO\n =================================================\n" +
-                "Tipo de vehiculo: Carro\nPlaca: "+placa+"\nTipo de carro: "+tipoCarro.toString()+"\nServicio: "+servicioPublico.toString();
+                "Tipo de vehiculo: Carro\nPlaca: "+placa+"\nTipo de carro: "+tipoCarro.toString()+"\nVehiculo de: "+servicioPublico.toString()+"\nCantidade de peajes pagos: "+cantPeajesPagos;
     }
 
     @Override

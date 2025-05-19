@@ -24,7 +24,7 @@ public class Moto extends Vehiculo {
     @Override
     public String getDescripcion() {
         return "DATOS DEL VEHICULO\n =================================================\n" +
-                "Tipo de vehiculo: Moto\nPlaca: "+placa+"\nCilindrada: "+cilindrada;
+                "Tipo de vehiculo: Moto\nPlaca: "+placa+"\nCilindraje: "+cilindrada+"\nCantidad de peajes pagos: "+cantPeajesPagos;
     }
 
     @Override

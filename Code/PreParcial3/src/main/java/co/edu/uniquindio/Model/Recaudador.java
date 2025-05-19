@@ -12,6 +12,11 @@ public class Recaudador extends Persona{
         this.dineroRecaudado = dineroRecaudado;
     }
 
+    @Override
+    public String toString() {
+        return "Nombre: "+nombre+"\nApellido: "+apellido+"\nNúmero de identificación: "+id+"\nDinero recaudado: "+dineroRecaudado;
+    }
+
     //getter's and setter's
     public double getDineroRecaudado() {
         return dineroRecaudado;

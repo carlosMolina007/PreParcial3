@@ -21,7 +21,7 @@ public class Peaje {
     //ToString
     @Override
     public String toString() {
-        return "Nombre del peaje: " + nombre + "\nDepartamento en el que está ubicado: " + departamento+"\n";
+        return "Nombre del peaje: " + nombre + "\nDepartamento en el que está ubicado: " + departamento+"\nValor total recaudado: " + valorTotalPeajes ;
     }
 
     //getter's and setter's

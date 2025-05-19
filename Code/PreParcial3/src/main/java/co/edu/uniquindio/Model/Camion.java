@@ -27,7 +27,7 @@ public class Camion extends Vehiculo {
     public String getDescripcion(){
         return "DATOS DEL VEHICULO\n =================================================\n" +
                 "Tipo de vehiculo: Camión\nPlaca: "+placa+"\nCantidad de ejes: "+cantEjes+
-                "\nCapacidad máxima en toneladas: "+capacidadPesoTon;
+                "\nCapacidad máxima en toneladas: "+capacidadPesoTon+"\nCantidad de peajes pagos: "+cantPeajesPagos;
     }
 
     @Override
