@@ -50,13 +50,6 @@ public class Empresa {
         return listVehiculos;
     }
 
-    //Unifica la lista de personas (Conductor, Recaudador)
-    public List<Persona> unificarListaPersonas() {
-        List<Persona> listPersonas = new ArrayList<>();
-        listPersonas.addAll(gRecaudador.getListRecaudadores());
-        listPersonas.addAll(gConductor.getListConductor());
-        return listPersonas;
-    }
 
     //Asigna un vehiculo a un conductor
     public boolean asignarVehiculosConductor(String idConductor, String placaVehiculoAsignar) {
@@ -74,7 +67,6 @@ public class Empresa {
         }
         return false;
     }
-
 
     //Registra un vehiculo que pasa por un peaje
     public boolean registrarVehiculoPorPeaje(String placaVehiculoRPeaje, String nombrePeaje) {
